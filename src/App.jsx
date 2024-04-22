@@ -1,13 +1,15 @@
-import React from 'react'
-import Principal from './components/Principal'
-import Header from './components/Header'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Principal from './pages/Principal'
+
+const router = createBrowserRouter ([
+  {
+    path: "/",
+    element: <Principal/>
+  }
+])
 
 export default function App() {
   return (
-    <main className='flex flex-col items-center'>
-      <Header/>
-      <Principal/>
-    </main>
+    <RouterProvider router={router}/> 
   )
 }

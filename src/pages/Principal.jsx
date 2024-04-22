@@ -1,3 +1,4 @@
+import Header from '../components/Header'
 import React from 'react'
 import harvey from '/Harvey Specter.jpg'
 import mike from '/Mike Ross.jpg'
@@ -9,6 +10,7 @@ import jessica from '/Jessica Pearson.jpg'
 export default function Principal() {
   return (
     <section className='flex flex-col items-center justify-center'>
+        <Header/>
         <div>
             <h2 className='font-bold text-3xl'>Sinopse</h2>
             <p>
@@ -24,8 +26,8 @@ export default function Principal() {
             </p>
         </div>
 
-        <div>
-            <h2 className='font-bold text-3xl'>Informações da série</h2>
+        <div className='my-7'>
+            <h2 className='font-bold text-3xl '>Informações da série</h2>
             <p>
                 Temporada 1: 12 episódios
                 Temporada 2: 16 episódios
@@ -43,42 +45,42 @@ export default function Principal() {
             <h2 className='font-bold text-3xl'>Personagens</h2>
         </div>
 
-        <div className='flex'>
+        <div className='flex my-12'>
             
-            <div>
-                <h3 className='font-semibold'>Harvey Specter</h3>
-                <img className='w-80 h-100' src={harvey} alt="" />
-                <p>Harvey é um advogado brilhante e carismático que trabalha no escritório de advocacia Pearson Hardman (mais tarde Pearson Specter e Pearson Specter Litt). Ele é conhecido por sua confiança, astúcia e habilidade de ganhar casos difíceis.</p>
+            <div className='mr-4'>
+                <h3 className='font-semibold '>Harvey Specter</h3>
+                <img className='h-80 w-60' src={harvey} alt="" />
+                <p className='w-60'>Harvey é um advogado brilhante e carismático que trabalha no escritório de advocacia Pearson Hardman (mais tarde Pearson Specter e Pearson Specter Litt). Ele é conhecido por sua confiança, astúcia e habilidade de ganhar casos difíceis.</p>
             </div>
-            <div>
+            <div >
                 <h3 className='font-semibold'>Mike Ross</h3>
-                <img className='w-80 h-100' src={mike} alt="" />
-                <p>Mike é um jovem inteligente com uma memória fotográfica que começa a trabalhar como associado na empresa de Harvey, embora não tenha frequentado a faculdade de direito nem tenha diploma. Ele possui um passado turbulento e esconde seu segredo de seus colegas de trabalho.</p>
+                <img className='h-80 w-64' src={mike} alt="" />
+                <p className='w-64'>Mike é um jovem inteligente com uma memória fotográfica que começa a trabalhar como associado na empresa de Harvey, embora não tenha frequentado a faculdade de direito nem tenha diploma. Ele possui um passado turbulento e esconde seu segredo de seus colegas de trabalho.</p>
             </div>
-            <div>
+            <div >
                 <h3 className='font-semibold'>Rachel Zane</h3>
-                <img className='w-80 h-100' src={rachel} alt="" />
-                <p>Rachel é inicialmente apresentada como uma paralegal na empresa Pearson Hardman (mais tarde Pearson Specter e Pearson Specter Litt), onde trabalha enquanto frequenta a faculdade de direito à noite. Ela é inteligente, ambiciosa e determinada a se tornar uma advogada. Rachel é conhecida por sua ética de trabalho impecável e sua habilidade de lidar com situações difíceis.
+                <img className='h-80 w-80' src={rachel} alt="" />
+                <p className='w-80'>Rachel é inicialmente apresentada como uma paralegal na empresa Pearson Hardman (mais tarde Pearson Specter e Pearson Specter Litt), onde trabalha enquanto frequenta a faculdade de direito à noite. Ela é inteligente, ambiciosa e determinada a se tornar uma advogada. Rachel é conhecida por sua ética de trabalho impecável e sua habilidade de lidar com situações difíceis.
                 </p>
             </div>
-            <div>
+            <div >
                 <h3 className='font-semibold'>Donna Paulsen</h3>
-                <img className='w-80 h-100' src={donna} alt="" />
-                <p>Donna é a assistente executiva de Harvey e é conhecida por sua inteligência, perspicácia e habilidades excepcionais de resolução de problemas. Ela desempenha um papel crucial no sucesso da empresa e é uma figura confiável para muitos dos personagens.</p>
+                <img className='h-80 w-64' src={donna} alt="" />
+                <p className='w-64'>Donna é a assistente executiva de Harvey e é conhecida por sua inteligência, perspicácia e habilidades excepcionais de resolução de problemas. Ela desempenha um papel crucial no sucesso da empresa e é uma figura confiável para muitos dos personagens.</p>
             </div>
-            <div>
+            <div >
                 <h3 className='font-semibold'>Louis Litt</h3>
-                <img className='w-80 h-100' src={louis} alt="" />
-                <p>Louis é um dos principais sócios da empresa e inicialmente é um rival de Harvey. Ele é extremamente competitivo e muitas vezes luta para se destacar. Apesar de suas peculiaridades e excentricidades, ele é um advogado talentoso.</p>
+                <img className='h-80 w-72' src={louis} alt="" />
+                <p className='w-72'>Louis é um dos principais sócios da empresa e inicialmente é um rival de Harvey. Ele é extremamente competitivo e muitas vezes luta para se destacar. Apesar de suas peculiaridades e excentricidades, ele é um advogado talentoso.</p>
             </div>
-            <div>
+            <div >
                 <h3 className='font-semibold'>Jessica Pearson</h3>
-                <img className='w-80 h-100' src={jessica} alt="" />
-                <p>Jessica é a sócia fundadora do escritório de advocacia Pearson Hardman e uma figura de autoridade respeitada na comunidade jurídica. Ela é inteligente, poderosa e determinada a manter a reputação e o sucesso da empresa.</p>
+                <img className='h-80 w-64' src={jessica} alt="" />
+                <p className='w-64'>Jessica é a sócia fundadora do escritório de advocacia Pearson Hardman e uma figura de autoridade respeitada na comunidade jurídica. Ela é inteligente, poderosa e determinada a manter a reputação e o sucesso da empresa.</p>
             </div>
         </div>
 
-        <a href="https://www.netflix.com/br/title/70195800">Assista a série</a>
+        <a className='text-blue-500' href="https://www.netflix.com/br/title/70195800">Assista a série</a>
         
     </section>
   )
