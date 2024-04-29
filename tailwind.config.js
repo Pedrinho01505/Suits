@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      "roboto": "Roboto",
+      'bebas': ['Bebas Neue', 'sans-serif'],
+      
+    }
   },
   plugins: [],
 }

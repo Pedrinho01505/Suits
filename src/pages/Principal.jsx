@@ -6,15 +6,19 @@ import rachel from '/Rachel Zane.jpg'
 import donna from '/Donna Paulsen.jpg'
 import louis from '/Louis Litt.jpg'
 import jessica from '/Jessica Pearson.jpg'
+import Fundo from '../assets/Imgfundo.jpg'
+import Barra from '../components/Barra'
 
 export default function Principal() {
   return (
-    <section className='flex flex-col items-center justify-center mx-36'>
+    <section className='flex flex-col items-center justify-center mx-80 px-56 text-justify bg-neutral-100 font-thin'>
+        <Barra/>
         <Header/>
+        <img className='h-96 w-auto opacity-90' src={Fundo} alt="" />
         <div className='flex flex-col items-center justify-center my-5'>
-            <h2 className='font-bold text-3xl my-5'>Sinopse</h2>
-            <p >
-                "Suits" é uma série de televisão americana criada por Aaron Korsh. A série estreou originalmente em 2011 no canal USA Network e ficou disponível para transmissão na Netflix em vários países.
+            <h2 className='font-medium text-3xl my-5 '>Sinopse</h2>
+            <p>
+                "Suits" é uma série de televisão     americana criada por Aaron Korsh. A série estreou originalmente em 2011 no canal USA Network e ficou disponível para transmissão na Netflix em vários países.
 
                 A trama de "Suits" gira em torno de um brilhante estudante de direito, Mike Ross (interpretado por Patrick J. Adams), que, apesar de não ter frequentado a faculdade de direito, impressiona o renomado advogado Harvey Specter (interpretado por Gabriel Macht) durante uma entrevista de emprego. Harvey contrata Mike como seu novo associado, mesmo sabendo que ele não possui diploma de direito, e os dois formam uma dupla dinâmica enquanto lidam com casos jurídicos complexos.
 
@@ -27,7 +31,7 @@ export default function Principal() {
         </div>
 
         <div>
-        <h2 className='font-bold text-3xl my-5'>Informações da série</h2>
+        <h2 className='font-medium text-3xl my-5'>Informações da série</h2>
         </div>
         <div className='my-5 justify-center items-center'>
             
@@ -44,24 +48,24 @@ export default function Principal() {
         </div>
 
         <div>
-            <h2 className='font-bold text-3xl'>Personagens</h2>
+            <h2 className='font-medium text-3xl'>Personagens</h2>
         </div>
 
         <div className='flex my-12'>
             
             <div className=''>
-                <h3 className='font-semibold '>Harvey Specter</h3>
-                <img className='h-80 w-60' src={harvey} alt="" />
-                <p className='w-60'>Harvey é um advogado brilhante e carismático que trabalha no escritório de advocacia Pearson Hardman (mais tarde Pearson Specter e Pearson Specter Litt). Ele é conhecido por sua confiança, astúcia e habilidade de ganhar casos difíceis.</p>
+                <h3 className='font- '>Harvey Specter</h3>
+                <img className='h-80 w-60 mb-3' src={harvey} alt="" />
+                <p className='w-60 '>Harvey é um advogado brilhante e carismático que trabalha no escritório de advocacia Pearson Hardman (mais tarde Pearson Specter e Pearson Specter Litt). Ele é conhecido por sua confiança, astúcia e habilidade de ganhar casos difíceis.</p>
             </div>
             <div className='mx-16'>
                 <h3 className='font-semibold'>Mike Ross</h3>
-                <img className='h-80 w-64' src={mike} alt="" />
+                <img className='h-80 w-64 mb-3' src={mike} alt="" />
                 <p className='w-64'>Mike é um jovem inteligente com uma memória fotográfica que começa a trabalhar como associado na empresa de Harvey, embora não tenha frequentado a faculdade de direito nem tenha diploma. Ele possui um passado turbulento e esconde seu segredo de seus colegas de trabalho.</p>
             </div>
             <div className=''>
                 <h3 className='font-semibold'>Rachel Zane</h3>
-                <img className='h-80 w-72' src={rachel} alt="" />
+                <img className='h-80 w-72 mb-3' src={rachel} alt="" />
                 <p className='w-72'>Rachel é inicialmente apresentada como uma paralegal na empresa Pearson Hardman (mais tarde Pearson Specter e Pearson Specter Litt), onde trabalha enquanto frequenta a faculdade de direito à noite. Ela é inteligente, ambiciosa e determinada a se tornar uma advogada. Rachel é conhecida por sua ética de trabalho impecável e sua habilidade de lidar com situações difíceis.
                 </p>
             </div>
@@ -69,17 +73,17 @@ export default function Principal() {
         <div className='flex my-12'>
             <div  className=''>
                     <h3 className='font-semibold'>Donna Paulsen</h3>
-                    <img className='h-80 w-64' src={donna} alt="" />
+                    <img className='h-80 w-64 mb-3' src={donna} alt="" />
                     <p className='w-64'>Donna é a assistente executiva de Harvey e é conhecida por sua inteligência, perspicácia e habilidades excepcionais de resolução de problemas. Ela desempenha um papel crucial no sucesso da empresa e é uma figura confiável para muitos dos personagens.</p>
                 </div>
                 <div  className='mx-16'>
                     <h3 className='font-semibold'>Louis Litt</h3>
-                    <img className='h-80 w-64' src={louis} alt="" />
+                    <img className='h-80 w-64 mb-3' src={louis} alt="" />
                     <p className='w-64'>Louis é um dos principais sócios da empresa e inicialmente é um rival de Harvey. Ele é extremamente competitivo e muitas vezes luta para se destacar. Apesar de suas peculiaridades e excentricidades, ele é um advogado talentoso.</p>
                 </div>
                 <div >
                     <h3 className='font-semibold'>Jessica Pearson</h3>
-                    <img className='h-80 w-64' src={jessica} alt="" />
+                    <img className='h-80 w-64 mb-3' src={jessica} alt="" />
                     <p className='w-64'>Jessica é a sócia fundadora do escritório de advocacia Pearson Hardman e uma figura de autoridade respeitada na comunidade jurídica. Ela é inteligente, poderosa e determinada a manter a reputação e o sucesso da empresa.</p>
                 </div>
         </div>
