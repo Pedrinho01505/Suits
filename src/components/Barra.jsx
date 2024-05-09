@@ -7,7 +7,7 @@ export default function Barra() {
         <div className="">
         <nav className="space-x-4 p-5">
           <ul className="container mx-auto flex justify-between itens-center text-white font-medium">
-             <li>Home</li>
+             <li className="hover:text-gray-300 cursor-pointer">Home</li>
              <li></li>
            </ul>           
         </nav>
