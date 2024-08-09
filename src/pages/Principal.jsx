@@ -11,10 +11,10 @@ import Barra from '../components/Barra'
 
 export default function Principal() {
   return (
-    <section className='flex flex-col items-center justify-center mx-80 px-56 text-justify bg-gray-100 font-thin '>
+    <section className='flex flex-col items-center justify-center mx-56 px-56 text-justify bg-gray-100 font-thin '>
         <Barra/>
         <Header/>
-        <img className='h-96 w-auto opacity-90' src={Fundo} alt="" />
+        <img className='w-auto opacity-90' src={Fundo} alt="" />
         <div className='flex flex-col items-center justify-center my-5'>
             <h2 className='font-medium text-3xl my-5 text-red-700'>Sinopse</h2>
             <p>
@@ -58,7 +58,7 @@ export default function Principal() {
                 <img className='h-80 w-60 mb-3 mt-2' src={harvey} alt="" />
                 <p className='w-60 '>Harvey é um advogado brilhante e carismático que trabalha no escritório de advocacia Pearson Hardman (mais tarde Pearson Specter e Pearson Specter Litt). Ele é conhecido por sua confiança, astúcia e habilidade de ganhar casos difíceis.</p>
             </div>
-            <div className='mx-16'>
+            <div className='mx-8'>
                 <h3 className='font-semibold text-red-700'>Mike Ross</h3>
                 <img className='h-80 w-64 mb-3 mt-2' src={mike} alt="" />
                 <p className='w-64'>Mike é um jovem inteligente com uma memória fotográfica que começa a trabalhar como associado na empresa de Harvey, embora não tenha frequentado a faculdade de direito nem tenha diploma. Ele possui um passado turbulento e esconde seu segredo de seus colegas de trabalho.</p>
@@ -76,7 +76,7 @@ export default function Principal() {
                     <img className='h-80 w-64 mb-3 mt-2' src={donna} alt="" />
                     <p className='w-64'>Donna é a assistente executiva de Harvey e é conhecida por sua inteligência, perspicácia e habilidades excepcionais de resolução de problemas. Ela desempenha um papel crucial no sucesso da empresa e é uma figura confiável para muitos dos personagens.</p>
                 </div>
-                <div  className='mx-16'>
+                <div  className='mx-8'>
                     <h3 className='font-semibold text-red-700'>Louis Litt</h3>
                     <img className='h-80 w-64 mb-3 mt-2' src={louis} alt="" />
                     <p className='w-64'>Louis é um dos principais sócios da empresa e inicialmente é um rival de Harvey. Ele é extremamente competitivo e muitas vezes luta para se destacar. Apesar de suas peculiaridades e excentricidades, ele é um advogado talentoso.</p>
